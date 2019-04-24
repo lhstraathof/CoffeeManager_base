@@ -48,23 +48,6 @@ To be able to attend this workshop you need to make sure you have the following 
 
 ---
 
-# Workshop
-
-| # | Lesson | Date | Type |
-|:--:|:---|:--:|:--:|
-| 1 | [Hands-on JavaScript](lesson.html?file=01 - Hands-on JavaScript) | 04/03 | Offline |
-| 2 | [Modern JavaScript](lesson.html?file=02 - Modern JavaScript) | 11/03 | Online |
-| 3 | [Introduction to Node](lesson.html?file=03 - Introduction to Node) | 18/03 | Online |
-| 4 | [Basic Node Concepts](lesson.html?file=04 - Basic Node Concepts) | 25/03 | Online |
-| 5 | [Node in Production](lesson.html?file=05 - Node in Production) | 01/04 | Offline |
-| 6 | [JavaScript in Browser](lesson.html?file=06 - JavaScript in Browser) | 08/04 | Online |
-| 7 | [Polymer](lesson.html?file=07 - Polymer) | 15/04 | Online |
-| 8 | [Custom Elements](lesson.html?file=08 - Custom Elements) | 22/04 | Online |
-| 9 | [Shadow DOM](lesson.html?file=09 - Shadow DOM) | 29/04 | Online |
-| 10 | [Web Components in Production](lesson.html?file=010 - Web Components in Production) | 06/05 | Offline |
-
----
-
 # Materials
 
 - Presentation
