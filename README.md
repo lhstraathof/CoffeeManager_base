@@ -1,68 +1,87 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+class: primary
+count: false
 
-## Available Scripts
+# ReactJS Fundamentals
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# About
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The workshop "ReactJS Fundamentals" is made for Qualogy B.V. and planned to take place 25the of April from 16:00 till 20:30
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+by
 
-### `npm test`
+- Lars Straathof, *mail@lars.amsterdam*
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - `Front-end Developer`
+  - *Qualogy Consultant*
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Description
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The last few years *JavaScript* is dominating the rank list of *most popular* programming language on GitHub and StackOverflow. The market demand for Front-end Developers is at an all time high. And according to 'TheStateOfJS' React has taken the crown as its most popular framework.  
+  
+This workshop is for those who are new to React and those looking to get a better understanding of *React fundamentals*. In this workshop we are going to build an application together. So that when you leave you will understand what problems React can solve for you and how it goes about doing this. You will learn JSX, Styling, PropTypes, Managing State, Lifecycle, Events, Basic Tooling and other fundamentals. At the end of the course you will have a running application that you will deploy to the cloud.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A solid background as software developer is key and some knowledge about JavaScript will help but is not mandatory.   
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Description
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The course embraces the key features of the JavaScript language - **types, closures, scopes, variables, EcmaScript 2018 specifics, Promises** together with high-level object-oriented, and functional programming paradigms.
+On the client side it covers browser related APIs - **DOM, Events, Ajax**,
+**HTML and CSS** in general and **React Components** specifications details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Prerequisites
 
-## Learn More
+To be able to attend this workshop you need to make sure you have the following ready:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* A laptop
+* GIT installed (fow windows I reccoment Git Bash)
+* Wifi connection
+* NodeJS installed
+* Yarn installed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+# Workshop
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+| # | Lesson | Date | Type |
+|:--:|:---|:--:|:--:|
+| 1 | [Hands-on JavaScript](lesson.html?file=01 - Hands-on JavaScript) | 04/03 | Offline |
+| 2 | [Modern JavaScript](lesson.html?file=02 - Modern JavaScript) | 11/03 | Online |
+| 3 | [Introduction to Node](lesson.html?file=03 - Introduction to Node) | 18/03 | Online |
+| 4 | [Basic Node Concepts](lesson.html?file=04 - Basic Node Concepts) | 25/03 | Online |
+| 5 | [Node in Production](lesson.html?file=05 - Node in Production) | 01/04 | Offline |
+| 6 | [JavaScript in Browser](lesson.html?file=06 - JavaScript in Browser) | 08/04 | Online |
+| 7 | [Polymer](lesson.html?file=07 - Polymer) | 15/04 | Online |
+| 8 | [Custom Elements](lesson.html?file=08 - Custom Elements) | 22/04 | Online |
+| 9 | [Shadow DOM](lesson.html?file=09 - Shadow DOM) | 29/04 | Online |
+| 10 | [Web Components in Production](lesson.html?file=010 - Web Components in Production) | 06/05 | Offline |
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+# Materials
 
-### Making a Progressive Web App
+- Presentation
+- Code Example
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+---
 
-### Advanced Configuration
+# Time
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+4 hours workshop on location (Qualogy office - Rijswijk)
 
-### Deployment
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+# Summary
 
-### `npm run build` fails to minify
+The course is intended for software developers who want to learn ReactJS and modern JavaScript.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+---
+
+# Thank you!

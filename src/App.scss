@@ -1,0 +1,55 @@
+@import './styling/colors.scss';
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(110,23,4,1) 0%, rgba(207,103,28,1) 100%);
+  color: $gray;
+  font-size: 16px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.app {
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  height: 600px;
+  background: $white;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px 1px rgba(0,0,0,0.2);
+  position: fixed;
+  display: flex;
+flex-direction: column;
+  &__nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
+    &-item {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+      color: $gray;
+      text-decoration: none;
+      &--active {
+        color: $red;
+      }
+      &--who {
+        color: white;
+        background: $red;
+      }
+    }
+  }
+}
