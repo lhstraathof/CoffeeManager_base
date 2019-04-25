@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Text from './Text';
+import Hello from './Hello';
 
 import { withKnobs, text, } from '@storybook/addon-knobs';
  
@@ -11,8 +11,9 @@ const stories = storiesOf('Storybook Knobs', module);
 stories.addDecorator(withKnobs);
  
 // Knobs for React props
-stories.add('with a text', () => (
-  <Text 
-    text={text('Text', 'Qualogy')}
+stories.add('Hello', () => (
+  <Hello 
+    name={text('Name', 'Qualogy')}
+    onClick={ ()=> {console.log('click')} }
    />
 ));

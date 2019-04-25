@@ -151,6 +151,28 @@ It is not a framework
 
 ---
 
+### More then web
+- web
+- app
+- server
+
+---
+
+#### Examples
+
+![](./images/example1.png)
+
+---
+
+![](./images/example2.png)
+
+---
+
+
+![](./images/example3.png)
+
+---
+
 ## What we are going to build?
 
 ---
@@ -161,20 +183,13 @@ It is not a framework
 
 ---
 
-export default Split
+Manage your coffee and your co-workers, because no one likes to wait for there favorite beverage.
 
-<div>
-  <h3>Concept:</h3>
+---
 
-  <p>Manage a list of people to chose from who gets coffee (randomly)</p>
-</div>
-<div>
-  <h3>Requirements:</h3>
-  <ul>
-    <li>When someone is chosen, he/she can no longer be chosen until the rest is chosen</li>
-    <li>Be able to delete added people</li>
-  </ul>
-</div>
+### Requirements:
+- A person can only be chosen 1 time per round
+- Be able to add/delete people
 
 ---
 
@@ -250,9 +265,42 @@ export default Split
 
 ---
 
+<CodeSurfer
+  title="useState"
+  code={require("!raw-loader!./code/state_example.js")}
+  lang="javascript"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { notes: ""},
+    { lines: [1], notes: "Explicitly import useState" },
+    { lines: [3], notes: "Create a new state holder" },
+    { lines: [6], notes: "Conditionaly show text depending on the state" },
+    { lines: [7], notes: "Trigger click event an dupdate state" },
+  ]}
+/>
+
+---
+
 ## 6. Structure
-* Component composition
+* Component structure
 * Project structure
+
+---
+
+<CodeSurfer
+  title="Component structure"
+  code={require("!raw-loader!../src/components/Hello/Hello.js")}
+  lang="javascript"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { notes: ""},
+    { lines: [4], notes: "Start custom element with capital" },
+    { range: [8, 10], notes: "Check for correct prop types" },
+    { range: [12, 14], notes: "Set default values for props" },
+  ]}
+/>
 
 ---
 
@@ -320,6 +368,11 @@ export default Split
   <a href="https://firebase.google.com/">Firebase</a><br />
   <a href="https://github.com/jxnblk/mdx-deck">MDX Deck</a>
 </div>
+
+---
+
+## Learn more?
+Tip: Look at the [React Developer Roadmap 2019](https://github.com/adam-golab/react-developer-roadmap)
 
 ---
 
