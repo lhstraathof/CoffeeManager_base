@@ -1,16 +1,16 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-class Hello extends React.Component {
+const Hello = (props) => {
+    return <h1>Hello, {props.name}</h1>;
+};
 
-    static propTypes = {
-        name: string,
-    }
+Hello.propTypes = {
+    name: string,
+};
 
-    render() {
-        const {name} = this.props;
-        return <h1>Hello, {name}</h1>;
-    }
-}
+Hello.defaultProps = {
+    name: 'John Doe',
+};
 
 export default Hello;

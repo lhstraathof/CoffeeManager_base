@@ -15,7 +15,7 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
-    "present": "mdx-deck src/deck.mdx",
+    "present": "mdx-deck slides/deck.mdx",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,6 +41,8 @@
     "@storybook/addons": "^5.0.10",
     "@storybook/react": "^5.0.10",
     "babel-loader": "^8.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
     "mdx-deck": "^1.10.2",
     "mdx-deck-code-surfer": "^0.5.5",
     "raw-loader": "^1.0.0",
