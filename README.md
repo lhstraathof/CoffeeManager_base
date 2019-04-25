@@ -42,3 +42,8 @@ This workshop is for those who are new to React and those looking to get a bette
 *   Have the latest [`node`](https://nodejs.org/), [`npm`](https://www.npmjs.com/), and [`git`](https://git-scm.com/) installed
 *   Preferably a code editor with integrated terminal like VS Code
 *   You will need to run commands, for Windows users I would recommend installing GIT Bash
+
+**Feedback**
+
+After the workshop I would like to receive your feedback, so I can keep on improving these activities. Please fill in the short form and let me know what you thought of the workshop (your answers are anonymous).
+[https://forms.gle/JJLAjwqbViYFkisq8](https://forms.gle/JJLAjwqbViYFkisq8)
