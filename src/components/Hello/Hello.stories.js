@@ -14,6 +14,5 @@ stories.addDecorator(withKnobs);
 stories.add('Hello', () => (
   <Hello 
     name={text('Name', 'Qualogy')}
-    onClick={ ()=> {console.log('click')} }
    />
 ));
