@@ -1,5 +1,5 @@
 **TL;DR**  
-A workshop about React, teaching you the fundamentals while building an application.
+A workshop about React, teaching you the fundamentals while building an application. Created for [Qualogy](https://www.qualogy.com/nl)
 
 .
 
