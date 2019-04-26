@@ -1,0 +1,12 @@
+.coffee-form {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    &__input {
+        padding: 10px;
+    }
+}

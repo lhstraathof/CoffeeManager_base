@@ -1,61 +1,85 @@
-import React, { useState, Fragment } from 'react';
-import Drawer from '@material-ui/core/Drawer';
-import PeopleForm from '../../components/PeopleForm';
-import PeopleList from '../../components/PeopleList';
-import Button from '../../components/Button';
+import React, {useState} from 'react';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import DeleteIcon from '@material-ui/icons/Delete';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import Select from '@material-ui/core/Select';
 
 import './PagePeople.scss';
 
-const PagePeople = (props) => {
-  const {people, selectedPerson, selectedPersonRef, coffee, peopleRef} = props;
-  const [drawer, setDrawer] = useState(false);
+const PagePeople = () => {
 
-  const addPerson = (name, drink) => {
-    name !== '' && peopleRef.set([...people, {
-      name, 
-      drink: drink,
-      count: 0,
-      fetchedCoffee: false,
-    } ] ); 
-  };
+  const [data, setData] = useState([]);
+  const [name, setName] = useState([]);
+  const [selectedPerson, setSelectedPerson] = useState('');
 
-  const removePerson = index => {
-    if (people.length === 1) selectedPersonRef.set('');
-    const newArray = people.filter( (person, i) => i !== index);
-    peopleRef.set(newArray);
-  };
-
+  // const data = [
+  //   {
+  //     name: 'Lars',
+  //     drink: 'Water'
+  //   },
+  //   {
+  //     name: 'Pieter',
+  //     drink: 'Coffee'
+  //   }
+  // ];
   return (
-      <div className="add-people">
-        {!selectedPerson ? (
-          <p>Who will get the next coffee round?</p>
-        ) : (
-          <Fragment>
-            <p>It's the turn of:</p>
-            <h2 className="add-people__winner">{selectedPerson}</h2>
-          </Fragment>
-        )}
-        {!people.length && (
-          <Fragment>
-            <h3>No people added yet</h3>
-            <p>Want to start managing who gets coffee? <br/>First add some people :)</p>
-          </Fragment>
-        )}
-        {people.length > 0 && (
-          <PeopleList people={people} removePerson
-          ={removePerson} />
-        )}
-        <Button onClick={() => { setDrawer(true); }} text="+ Add People" color="orange" />
-        <Drawer 
-          className="app__drawer"
-          anchor="bottom" 
-          open={drawer} 
-          onClose={() => setDrawer(false)}>
-            <PeopleForm coffee={coffee} addPerson={addPerson} />
-        </Drawer>
-      </div>
+    <div>
+      <p>Who will get the next coffee round?</p>
+      {data.length < 1 && (
+        <div>
+          <h3>No people added yet</h3>
+          <p>Want to manage who gets your coffee? <br />Add some people first</p>
+        </div>
+      )}
+   
+      {selectedPerson && <h2>{selectedPerson}</h2>}
+      <List>
+        {data.map((person, i) => {
+          return (
+            <ListItem>
+              <ListItemText primary={person.name} secondary={person.drink} />
+              <DeleteIcon />
+            </ListItem>
+          );
+        })}
+        </List>
+        <div>
+        <TextField
+          id="outlined-name"
+          label="Name"
+          // value={this.state.name}"
+          value={name}
+          // onChange={this.handleChange('name')}
+          margin="normal"
+          variant="outlined"
+          onChange={ (e) => setName( e.target.value ) }
+        />
+        <br />
+        <Button variant="contained" color="primary" onClick={ () => {
+          setData([
+            ...data,
+            {
+              name: name,
+              drink: 'Beer'
+            }
+          ]);
+          setName('');
+        } }>
+          + Add person
+        </Button>
+        <br /><br />
+        <Button disabled={data.length < 1} variant="contained" color="secondary" onClick={ () => {
+          const selected = data[Math.floor(Math.random()*data.length)];
+          setSelectedPerson(selected.name);
+        } }>
+          Select person
+        </Button>
+        </div>
+    </div>
   );
-
 }
 
 export default PagePeople;

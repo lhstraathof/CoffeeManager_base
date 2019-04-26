@@ -1,0 +1,39 @@
+@import '../../styling/colors';
+
+.button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* show a hand cursor on hover; some argue that we
+    should keep the default arrow cursor for buttons */
+    cursor: pointer;
+    color: $white;
+    &--c-orange {
+        background-color: $orange;
+    }
+    &--c-red {
+        background-color: $red;
+    }
+    &--c-brown {
+        background-color: $dark-red;
+    }
+    &--c-green {
+        background-color: #0d991d;
+    }
+    &--s-small {
+        padding: 5px 10px;
+    }
+    &--s-medium {
+        padding: 10px 20px;
+    }
+    &--s-large {
+        padding: 15px 30px;
+    }
+    &--disabled {
+        background-color: $light-gray;
+        color: $gray;
+        cursor: default;
+    }
+}
